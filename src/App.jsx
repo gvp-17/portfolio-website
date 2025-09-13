@@ -1,13 +1,10 @@
-import React from 'react'
+import './App.css'
 
-const App = () => {
+function App() {
+
   return (
-    <div className='text-3xl font-bold underline text-red-500'>
-      App
-    </div>
+    <h1 className = 'text-3xl font-bold underline'>Hello, World!</h1>
   )
 }
 
 export default App
-
-
