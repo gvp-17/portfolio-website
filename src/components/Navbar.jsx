@@ -25,17 +25,22 @@ const Navbar = ({theme, setTheme}) => {
 
 
             {/* Toggle between menu and close icon */}
-            <img 
-              src={sidebarOpen 
-                ? assets.close_icon 
-                : theme === 'dark' 
-                  ? assets.menu_icon_dark 
-                  : assets.menu_icon
-              } 
-              alt="" 
-              onClick={() => setSidebarOpen(!sidebarOpen)} 
-              className={`${sidebarOpen ? 'w-6' : 'w-8'} sm:hidden cursor-pointer`}
-            />
+            <div className="relative w-8 h-8 sm:hidden">
+              <img 
+                src={theme === 'dark' ? assets.menu_icon_dark : assets.menu_icon}
+                alt="menu"
+                className={`absolute inset-0 w-8 cursor-pointer transition-all duration-200
+                  ${sidebarOpen ? 'scale-0 opacity-0' : 'scale-100 opacity-100'}`}
+                onClick={() => setSidebarOpen(true)}
+              />
+              <img 
+                src={assets.close_icon}
+                alt="close"
+                className={`absolute inset-0 w-6 m-1 cursor-pointer transition-all duration-200 delay-100
+                  ${sidebarOpen ? 'scale-100 opacity-100' : 'scale-0 opacity-0'}`}
+                onClick={() => setSidebarOpen(false)}
+              />
+            </div>
 
             <a href="#contact-me" className='text-sm max-sm:hidden flex items-center gap-2 bg-primary text-white px-6 py-2 rounded-full cursor-pointer hover:scale-103 transition-all'> Connect <img src={assets.arrow_icon} width={14} alt="" /> </a>
         </div> 

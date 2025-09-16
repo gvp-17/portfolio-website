@@ -1,6 +1,6 @@
 import logo from './logo.svg'
 import arrow_icon from './arrow_icon.svg'
-import group_profile from './group_profile.png'
+import handicon from './handicon.ico'
 import bgImage1 from './bgImage1.png'
 import bgImage2 from './bgImage2.png'
 import hero_img from './hero_img.png'
@@ -43,7 +43,7 @@ export const company_logos = [
 const assets = {
   logo,
   arrow_icon,
-  group_profile,
+  handicon,
   bgImage1,
   bgImage2,
   hero_img,
