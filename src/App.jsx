@@ -1,10 +1,16 @@
-import './App.css'
+import React, { useState } from 'react'
+import Navbar from './components/Navbar'
 
-function App() {
+const App = () => {
+
+  const [theme, setTheme] = useState('dark')
 
   return (
-    <h1 className = 'text-3xl font-bold underline'>Hello, World!</h1>
+    <div className={`dark bg-black relative`}>
+      <Navbar theme={theme} setTheme={setTheme} />
+    </div>
   )
 }
 
 export default App
+
