@@ -15,9 +15,8 @@ const Navbar = ({theme, setTheme}) => {
             ${!sidebarOpen ? 'max-sm:opacity-0 max-sm:pointer-events-none max-sm:translate-y-[-10px]' : 'max-sm:opacity-100 max-sm:pointer-events-auto max-sm:translate-y-0'}
           `}>
             <a onClick={() => setSidebarOpen(false)} href="#" className='hover:text-[#d76e00] transition-colors max-sm:py-4 max-sm:px-6 max-sm:w-full max-sm:text-center'>Home</a>
-            <a onClick={() => setSidebarOpen(false)} href="#about-me" className='hover:text-[#d76e00] transition-colors max-sm:py-4 max-sm:px-6 max-sm:w-full max-sm:text-center'>About Me</a>
-            <a onClick={() => setSidebarOpen(false)} href="#projects" className='hover:text-[#d76e00] transition-colors max-sm:py-4 max-sm:px-6 max-sm:w-full max-sm:text-center'>Projects</a>
-            <a onClick={() => setSidebarOpen(false)} href="#blog" className='hover:text-[#d76e00] transition-colors max-sm:py-4 max-sm:px-6 max-sm:w-full max-sm:text-center'>Blog</a>
+            <a onClick={() => setSidebarOpen(false)} href="#projects" className='hover:text-[#d76e00] transition-colors max-sm:py-4 max-sm:px-6 max-sm:w-full max-sm:text-center'>My Projects</a>
+            <a onClick={() => setSidebarOpen(false)} href="#blog" className='hover:text-[#d76e00] transition-colors max-sm:py-4 max-sm:px-6 max-sm:w-full max-sm:text-center'>About Me</a>
           </div>
         </div>
 

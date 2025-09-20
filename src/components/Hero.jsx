@@ -3,15 +3,28 @@ import assets from '../assets/assets'
 
 const Hero = () => {
   return (
-    <div id='hero' className='flex flex-col items-center justify-center min-h-screen pb-64 px-4 sm:px-12 lg:px-24 xl:px-40 w-full overflow-hidden text-gray-700 dark:text-white'>
+    <div id='hero' className='flex items-center justify-center min-h-screen pb-20 w-full overflow-hidden text-gray-700 dark:text-white'>
+      <div className='container mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12 px-8 sm:px-16 md:px-20 lg:px-24 xl:px-32'>
+        {/* Profile Picture */}
+        <div className='w-[32rem] sm:w-[40rem] md:w-[52rem] lg:w-[32rem] xl:w-[32rem] md:-ml-8 lg:-ml-12 xl:-ml-16'>
+          <img 
+            src={assets.profile_pic} 
+            alt="Greg Penalba"
+            className='w-full h-full object-cover rounded-2xl shadow-lg'
+          />
+        </div>
 
-        <h1 className='text-4xl sm:text-5xl md:text-6xl xl:text-[84px] font-medium xl:leading-[95px] max-w-5xl flex flex-col items-center text-center'>
-          <span>Hello 👋</span>
-          <span>I'm Greg Penalba</span>
-          <span>a <span className="bg-gradient-to-r from-[#d76e00] to-[#eab84d] bg-clip-text text-transparent">Data Analyst</span></span>
-          <span><span className="bg-gradient-to-r from-[#d76e00] to-[#eab84d] bg-clip-text text-transparent">& Developer</span></span>
-        </h1>
-      
+        {/* Hero Text */}
+        <div className='flex flex-col items-center md:items-start text-center md:text-left self-center -mt-24 md:-mt-52'>
+          <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium leading-tight flex flex-col gap-2'>
+            <span>Hello 👋 </span>
+            <span>I'm Greg Penalba</span>
+          </h1>
+          <p className='text-xl sm:text-2xl md:text-3xl mt-4 rubik-sane max-w-2xl'>
+            a California-based <span className="bg-gradient-to-r from-[#d76e00] to-[#eab84d] bg-clip-text text-transparent">Data Analyst</span> specializing in meaningful insights to make data-driven decisions.
+          </p>
+        </div>
+      </div>
     </div>
   )
 }
