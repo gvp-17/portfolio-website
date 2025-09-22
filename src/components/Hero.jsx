@@ -21,7 +21,7 @@ const Hero = () => {
             <span>I'm Greg Penalba</span>
           </h1>
           <p className='text-xl sm:text-2xl md:text-3xl mt-4 rubik-sane max-w-2xl'>
-            a California-based <span className="bg-gradient-to-r from-[#d76e00] to-[#eab84d] bg-clip-text text-transparent">Data Analyst</span> specializing in creating meaningful insights for data-driven decisions.
+            a California-based <span className="bg-gradient-to-r from-[#d76e00] to-[#eab84d] bg-clip-text text-transparent">Data Analyst</span> specializing in creating meaningful insights for data-driven solutions.
           </p>
           <div className="flex gap-4 mt-8">
             <span className="text-base sm:text-lg md:text-xl border border-white px-2 py-2 rounded-lg transition-all duration-300 hover:bg-gradient-to-r hover:from-[#d76e00] hover:to-[#ffb30f] hover:border-transparent cursor-pointer">Python</span>
